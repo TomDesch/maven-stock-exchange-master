@@ -13,6 +13,12 @@
     <artifactId>cli</artifactId>
 
     <dependencies>
+        <!-- Added by le me -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>com.switchfully.maven.exchange</groupId>
             <artifactId>api</artifactId>

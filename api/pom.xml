@@ -13,6 +13,12 @@
     <artifactId>api</artifactId>
 
     <dependencies>
+        <!-- added by le me -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>com.switchfully.maven.exchange</groupId>
             <artifactId>service</artifactId>
