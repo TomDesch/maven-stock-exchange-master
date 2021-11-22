@@ -22,7 +22,7 @@
         <module>service</module>
         <module>domain</module>
         <module>interfaces</module>
-        <module>cli</module>
+        <module>jar-module</module>
     </modules>
 
     <parent>
