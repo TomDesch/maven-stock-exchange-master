@@ -12,7 +12,7 @@ public class ExternalStockInformationService {
      * (not really, but just imagine it is)
      */
     public static BigDecimal getPriceInEuroForStock(String stockId) {
-        return new BigDecimal(RandomUtils.nextDouble(10, 100));
+        return BigDecimal.valueOf(RandomUtils.nextDouble(10, 100));
     }
 
 }

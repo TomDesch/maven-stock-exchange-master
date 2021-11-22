@@ -2,8 +2,8 @@ package com.switchfully.maven.exchange.domain;
 
 public class Stock {
 
-    private String id;
-    private String name;
+    private final String id;
+    private final String name;
     private StockPrice price;
 
     public Stock(String id, String name) {

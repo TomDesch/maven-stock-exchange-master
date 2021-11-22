@@ -5,8 +5,8 @@ import com.switchfully.maven.exchange.service.StockService;
 
 public class StockExchangeController {
 
-    private StockService stockService;
-    private StockMapper stockMapper;
+    private final StockService stockService;
+    private final StockMapper stockMapper;
 
     public StockExchangeController(StockService stockService, StockMapper stockMapper) {
         this.stockService = stockService;

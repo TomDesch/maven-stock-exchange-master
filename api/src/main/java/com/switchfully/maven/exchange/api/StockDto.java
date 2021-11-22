@@ -4,10 +4,10 @@ import java.math.BigDecimal;
 
 public class StockDto {
 
-    private String id;
-    private String name;
-    private BigDecimal price;
-    private String currency;
+    private final String id;
+    private final String name;
+    private final BigDecimal price;
+    private final String currency;
 
     StockDto(String id, String name, BigDecimal price, String currency) {
         this.id = id;

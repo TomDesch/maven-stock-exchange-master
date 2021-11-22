@@ -18,8 +18,8 @@ public class MyCLI {
     }
 
     private static void printStockDto(StockDto stockDto) {
-        System.out.println(String.format("Stock information for stockId: %s", stockDto.getId()));
-        System.out.println(String.format("\tName: %s", stockDto.getName()));
-        System.out.println(String.format("\tPrice: %s %s", stockDto.getPrice().intValue(), stockDto.getCurrency()));
+        System.out.printf("Stock information for stockId: %s%n", stockDto.getId());
+        System.out.printf("\tName: %s%n", stockDto.getName());
+        System.out.printf("\tPrice: %s %s%n", stockDto.getPrice().intValue(), stockDto.getCurrency());
     }
 }

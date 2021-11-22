@@ -7,7 +7,7 @@ import java.util.HashMap;
 
 public class StockRepository {
 
-    private static HashMap<String, Stock> stockDatabase =
+    private static final HashMap<String, Stock> stockDatabase =
             Maps.newHashMap(
                     new ImmutableMap.Builder<String, Stock>()
                             .put("AA", new Stock("AA", "Ambro AN"))
