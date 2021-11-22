@@ -142,7 +142,7 @@
                                 <archive>
                                     <manifest>
                                         <mainClass>
-                                            com.switchfully.maven.exchange.cli.MyCLI
+                                            com.switchfully.maven.exchange.jar.Application
                                         </mainClass>
                                     </manifest>
                                 </archive>

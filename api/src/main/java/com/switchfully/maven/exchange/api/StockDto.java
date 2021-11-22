@@ -31,4 +31,14 @@ public class StockDto {
     public String getCurrency() {
         return currency;
     }
+
+    @Override
+    public String toString() {
+        return "StockDto{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", price=" + price +
+                ", currency='" + currency + '\'' +
+                '}';
+    }
 }

@@ -17,6 +17,10 @@
             <version>2.6.0</version>
             <scope>compile</scope>
         </dependency>
+        <dependency>
+            <groupId>com.switchfully.maven.exchange</groupId>
+            <artifactId>api</artifactId>
+        </dependency>
     </dependencies>
 
     <properties>

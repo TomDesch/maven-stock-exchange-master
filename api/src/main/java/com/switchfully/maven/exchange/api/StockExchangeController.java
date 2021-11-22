@@ -20,15 +20,9 @@ public class StockExchangeController {
         this.stockMapper = stockMapper;
     }
 
-    /**
-     * For your information:
-     * This method gets called from outside this application
-     * (not really, but just imagine it will)
-     */
     @GetMapping("/{stockId}") // Added this because I was told to
     public StockDto getStock(@PathVariable String stockId) {
         Stock foundStock = stockService.getStock(stockId);
         return stockMapper.mapToDto(foundStock);
     }
-
 }
