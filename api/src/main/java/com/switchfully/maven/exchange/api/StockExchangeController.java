@@ -2,13 +2,11 @@ package com.switchfully.maven.exchange.api;
 
 import com.switchfully.maven.exchange.domain.Stock;
 import com.switchfully.maven.exchange.service.StockService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.*;
 
 
-@ResponseBody
+@RestController // Combines response body and controller
 @RequestMapping("/stocks") // Search for myself what they do and mean :eyes:
 public class StockExchangeController {
 
@@ -21,7 +19,7 @@ public class StockExchangeController {
     }
 
     @GetMapping("/{stockId}") // Added this because I was told to
-    public StockDto getStock(@PathVariable String stockId) {
+    public StockDto getStock(@PathVariable(name = "stockId") String stockId) {
         Stock foundStock = stockService.getStock(stockId);
         return stockMapper.mapToDto(foundStock);
     }

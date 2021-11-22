@@ -1,9 +1,11 @@
 package com.switchfully.maven.exchange.api;
 
 import com.switchfully.maven.exchange.domain.Stock;
+import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
 
+@Component // Convention: a mapper does mapping ;p
 public class StockMapper {
 
     public StockDto mapToDto(Stock stock) {
